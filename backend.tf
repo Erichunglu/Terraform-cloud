@@ -5,13 +5,14 @@ terraform{
             version = "3.42.0"
         }
     }
+    required_version = "~>0.14"
 
     backend "remote" {
         hostname = "app.terraform.io"
-        organization = cathay-practice
+        organization = "cathay-practice"
 
-        workspace {
-            name = Terraform-cloud
+        workspaces {
+            name = "Terraform-cloud"
         }
 
     }
