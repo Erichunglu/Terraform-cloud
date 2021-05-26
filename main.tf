@@ -12,5 +12,5 @@ provider "aws" {
 
 module "example" {
   source = "github.com/cloudposse/terraform-example-module.git?ref=master"
-  example = "Hello world!"
+  example = "Hello world!!!"
 }
